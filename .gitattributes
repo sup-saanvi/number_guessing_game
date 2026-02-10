@@ -1,0 +1,73 @@
+'''
+ Number guessing game 
+
+This is a game where you will have to guess the number!
+'''
+#INTRO 
+print("Hello user! Welcome to the guess of DOOM!")
+name = input("please enter your name.")
+print(f"Welcome, {name}!")
+
+# Import random module to generate a random number
+
+
+# Function to get a valid integer input with error handling
+
+
+# Function to get a valid 'y' or 'n' response from the user
+
+
+# Function to play one round of the game
+def format_yesorno(name: str) -> str:
+    yesorno = input("would you like to retry playing? type y for yes and n for no.")
+    # clean up the name (remove extra spaces)
+        clean_yesorno = yesorno.strip()
+    # convert name to lowercase
+        clean_yesorno_yesorno = clean_yesorno.lower()
+
+    # replace anme with underscores
+        final_yesorno = yesorno.replace(" ", "_")
+    
+    # return formatted username 
+    return final_yesorno
+
+if final_yesorno = "y"
+    print("")
+# Ask for number range
+
+
+# Ensure low_number is less than high_number
+
+
+# Ask for number of attempts
+
+
+# Generate random number
+
+
+# Track number of attempts
+
+
+# Loop for user guesses
+
+
+# Check if guess is too low or too high
+
+
+# Display success message if guessed correctly
+
+
+# If max attempts are used up, reveal the correct number
+
+
+# Main game loop
+
+
+# Ask for user's name and greet them
+
+
+# Ask if they want to play again, only accepting 'y' or 'n'
+
+
+# Run the game
+
