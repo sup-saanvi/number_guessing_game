@@ -3,11 +3,13 @@ This is a number guessing game.
  You have to type a number from
 1 to 100 and then guess.
 """
+import random
+
 #INTRO 
 print("Hello earthling! welcome to my game called the number guess of DOOM!")
 name = input("What is you name, type name here ")
 print(f"welcome {name}!")
-import random
+
 
 def number_guessing_game():
     print("🎮 Welcome to the Number Guessing Game!")
@@ -35,6 +37,9 @@ def number_guessing_game():
 
         except ValueError:
             print("❌ Please enter a valid number.")
+
+  
+            
 
 if __name__ == "__main__":
     number_guessing_game()
