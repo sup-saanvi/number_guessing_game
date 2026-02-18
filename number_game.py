@@ -4,25 +4,43 @@ This is a number guessing game.
 1 to 100 and then guess.
 """
 import random
+def get_number(prompt:str) -> int:
+   """
+   Will ask for an integer, it will check if it's an integer and return it .
+   """
+   while True:
+        try:
+            value = int(input(prompt))
 
+            return value
+        except ValueError:
+            print("please enter a valid integer.")
 #INTRO 
 print("Hello earthling! welcome to my game called the number guess of DOOM!")
 name = input("What is you name, type name here ")
 print(f"welcome {name}!")
 
 # Import random module to generate a random number
-import random
-# Function to get a valid integer input with error handling
-def number_guessing_game()
-            print")
+
+
 # Function to get a valid 'y' or 'n' response from the user
 
 # Function to play one round of the game
-
+round_to_win = get_number("What do you want the range to be till?")
 # Ask for number range
 
 # Ensure low_number is less than high_number
-
+def player_round() -> int:
+   # Roll dice for both player and computer
+    input("\nplease press ENTER to do next guess")
+    player_guess = take_another_turn
+    
+    if player_guess > guessed_number:
+        return print("To high try again!")
+    elif player_roll < guessed_nuber:
+        return print("To low try agian!")  
+    else:
+        return Print(" YAYA you guessed the number")
 # Ask for number of attempts
 
 # Generate random number
@@ -34,7 +52,7 @@ def number_guessing_game()
 # Check if guess is too low or too high
 
 # Display success message if guessed correctly
-=
+
 # If max attempts are used up, reveal the correct number
 
 # Main game loop
@@ -45,35 +63,3 @@ def number_guessing_game()
 
 # Run the game
 
-def number_guessing_game():
-    print("🎮 Welcome to the Number Guessing Game!")
-    print("I'm thinking of a number between 1 and 100.")
-
-    number = random.randint(1, 100)
-    attempts = 0
-
-    while True:
-        try:
-            guess = int(input("Enter your guess: "))
-            attempts += 1
-
-            if guess < 1 or guess > 100:
-                print("⚠️ Please guess a number between 1 and 100.")
-                continue
-
-            if guess < number:
-                print("Too low! 📉 Try again.")
-            elif guess > number:
-                print("Too high! 📈 Try again.")
-            else:
-                print(f"🎉 Congratulations! You guessed the number in {attempts} attempts.")
-                break
-
-        except ValueError:
-            print("❌ Please enter a valid number.")
-
-  
-            
-
-if __name__ == "__main__":
-    number_guessing_game()
