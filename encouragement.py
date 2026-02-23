@@ -1,24 +1,19 @@
-# TASK: Write a function that returns a random encouragement message.
+def add_five(number:int) -> int:
+    """
+    adds 5 to the number and returns the answer.
+    """  
+    
+    answer = number + 5
+    return answer
 
-import random
 
-def get_encouragement() -> str:
-    """Returns a random encouragement message."""
-    message1 = "You can do it!"
-    message2 = "Keep going, you're doing great!"
-    message3 = "Believe in yourself!"
-    message4 = "Every small step counts!"
+print(add_five(7))
 
-    random_number = random.randint(1, 4)
+#intro
+def greetings() -> name:
 
-    if random_number == 1:
-        return message1
-    elif random_number == 2:
-        return message2
-    elif random_number == 3:
-        return message3
-    else:
-        return message4
+name = input("hello ome to my game
+    print("Hello {name}!")!")
+user what is your name?")
 
-# Call the function and print the result
-print(get_encouragement())
+print("Hello{name}! wecl
