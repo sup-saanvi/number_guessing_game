@@ -37,8 +37,8 @@ def get_yes_no(prompt):
 def get_number_range():
     """Get a valid number range from the user."""
     while True:
-        low = get_valid_integer("Enter the lower bound: ")
-        high = get_valid_integer("Enter the upper bound: ")
+        low = get_valid_integer("Enter the lower number: ")
+        high = get_valid_integer("Enter the upper number: ")
 
         if low < high:
             return low, high
@@ -70,9 +70,9 @@ def play_game():
         attempts += 1
 
         if guess < target_number:
-            print("TOO LOW... YOU'RE FREEZING!")
+            print("TOO LOW...🥶 YOU'RE FREEZING!")
         elif guess > target_number:
-            print("TOO HIGH... YOU'RE BURNING!")
+            print("TOO HIGH...🥵 YOU'RE BURNING!")
         else:
             print(
                 f"Congrats! You guessed the number {target_number} "
@@ -81,7 +81,7 @@ def play_game():
             return
 # I typed out mean comment to the player beacuse I wanted to 
     print(
-        f"HAHAHA! You've used all {max_attempts} attempts.\n"
+        f"HAHAHA!😈 You've used all {max_attempts} attempts.\n"
         f"The DOOM number was {target_number}."
     )
 
@@ -98,7 +98,7 @@ def main():
     while True:
         play_game()
         if get_yes_no("Play again? (y/n): ") == 'n':
-            print("Thanks for playing I guess ........")
+            print("Thanks for playing I guess 😒......")
             break
 
 # This is the closing tage of the game that starts from the beinging till the end 
