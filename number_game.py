@@ -10,7 +10,8 @@ import random
 # ==========================
 # Input Helper Functions
 # ==========================
-
+# This is the valueError that tells the player to add a number not
+#  a word or letter or anything else that's not a number
 def get_valid_integer(prompt):
     """Prompt user until a valid integer is entered."""
     while True:
@@ -19,7 +20,7 @@ def get_valid_integer(prompt):
         except ValueError:
             print("Please enter a valid integer.")
 
-
+# This lets the player enter yes or no if they want to play again!
 def get_yes_no(prompt):
     """Prompt user until 'y' or 'n' is entered."""
     while True:
@@ -32,7 +33,7 @@ def get_yes_no(prompt):
 # ==========================
 # Game Logic Functions
 # ==========================
-
+# This is asking the player what range they want the number that they guess to be till 
 def get_number_range():
     """Get a valid number range from the user."""
     while True:
@@ -43,7 +44,7 @@ def get_number_range():
             return low, high
         print("Lower bound must be less than upper bound.")
 
-
+# This determines if the nuber is positive or not 
 def get_attempt_limit():
     """Get a positive number of attempts from the user."""
     while True:
@@ -52,7 +53,8 @@ def get_attempt_limit():
             return attempts
         print("Please enter a positive number.")
 
-
+# This determines if the number is too high or too low and tells the player to try again 
+#so then they can guess the right number
 def play_game():
     """Play one round of the guessing game."""
     low, high = get_number_range()
@@ -77,7 +79,7 @@ def play_game():
                 f"in {attempts} attempts."
             )
             return
-
+# I typed out mean comment to the player beacuse I wanted to 
     print(
         f"HAHAHA! You've used all {max_attempts} attempts.\n"
         f"The DOOM number was {target_number}."
@@ -87,7 +89,7 @@ def play_game():
 # ==========================
 # Main Program
 # ==========================
-
+# This is the intro of the game this is how we start the game 
 def main():
     print("Welcome to the NUMBER GUESS OF DOOM!")
     name = input("Enter your name: ")
@@ -99,6 +101,6 @@ def main():
             print("Thanks for playing I guess ........")
             break
 
-
+# This is the closing tage of the game that starts from the beinging till the end 
 if __name__ == "__main__":
     main()
